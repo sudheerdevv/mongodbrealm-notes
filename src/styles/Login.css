@@ -1,0 +1,93 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBox {
+  height: 50vh;
+  width: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginBox img {
+  height: 70%;
+}
+
+#loginBtn {
+  background-color: black;
+  border: none;
+  height: 3rem;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#loginBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loginBtn img {
+  margin-left: 0.5rem;
+}
+
+.container {
+  height: 15px;
+  width: 105px;
+  display: flex;
+  position: relative;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: move 700ms linear 0ms infinite;
+  margin-right: 30px;
+}
+
+.circle:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 700ms linear 0ms infinite;
+}
+
+.circle:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  animation: grow 700ms linear 0s infinite reverse;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}

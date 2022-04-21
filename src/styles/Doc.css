@@ -1,0 +1,42 @@
+.doc {
+  height: 34%;
+  background: rgba(123, 251, 255, 0.3);
+  border-radius: 5px;
+  padding: 6px 15px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.doc:hover {
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text_box {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.text_box h5 {
+  text-transform: capitalize;
+}
+
+.doc p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.doc em {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0.6;
+}

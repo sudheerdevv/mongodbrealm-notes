@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100vh;
+  width: 100%;
+  font-family: "Poppins";
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app_header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  position: absolute;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app_header img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.app_header button {
+  height: 2rem;
+  padding: 5px 10px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.doc_section {
+  height: 80vh;
+  width: 80%;
+  margin-top: 2rem;
+  box-shadow: 0px 10px 30px rgba(139, 205, 255, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.app_form input {
+  outline: none;
+  border: none;
+  background: rgba(139, 205, 255, 0.3);
+  height: 2rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+
+.form_message {
+  margin-top: 1rem;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  background: rgba(139, 205, 255, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: "Poppins";
+}
+
+.app_form button {
+  height: 2rem;
+  background: red;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin-top: 1rem;
+  border-radius: 7px;
+}
+
+.app_form button:hover {
+  background: #000;
+}
+
+.docs_div {
+  margin-top: 1rem;
+  height: 45%;
+  width: 100%;
+  padding: 0.5rem;
+  overflow: scroll;
+}
+
+.docs_div a {
+  text-decoration: none;
+  color: #000;
+}
+
+.docs_div::-webkit-scrollbar {
+  display: none;
 }
