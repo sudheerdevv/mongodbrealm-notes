@@ -102,3 +102,25 @@
 .docs_div::-webkit-scrollbar {
   display: none;
 }
+
+@media only screen and (max-width: 400px) {
+  .app {
+    font-size: 90%;
+  }
+  .app_header {
+    padding: 0 1.5rem;
+  }
+
+  .app_header img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .app_header button {
+    font-size: 0.6rem;
+  }
+
+  .doc_section {
+    width: 90%;
+  }
+}

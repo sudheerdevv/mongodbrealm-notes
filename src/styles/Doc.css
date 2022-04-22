@@ -40,3 +40,9 @@
   right: 2%;
   opacity: 0.6;
 }
+
+@media only screen and (max-width: 420px) {
+  .doc em {
+    font-size: 0.5rem;
+  }
+}
