@@ -6,11 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Sync your Atlas with Realm project before using the database.
 
-As MongoDB is not a real-time database updation the client-side component is not reloaded every time a change is made. Inorder to refresh the component useEffect() hook is used. Configure your Realm project Authentication with Google Cloud Platform's client ID and client secret.
+As MongoDB is not a real-time database updation on the client-side component is not instant every time a change is made. Inorder to refresh the component useEffect() hook is used. Configure your [Realm project Authentication](https://realm.mongodb.com/) with Google Cloud Platform's client ID and client secret.
 
 ## Google Cloud Platform
 
-Create a new project in your cloud console and create new credentials providing the redirect URI and Origin.
+Create a new project in your [cloud console](https://cloud.google.com) and create new credentials providing the redirect URI and Origin.
 Client ID and Client Secret are provided which are required to configure the Realm app's Authentication.
 
 ## Available Scripts
