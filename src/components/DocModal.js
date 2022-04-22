@@ -27,6 +27,8 @@ export default function DocModal({ name, message, show, hide, id }) {
       )
       .then(() => setNotif(!notif))
       .then(() => setTimeout(() => hide(), 2000));
+
+    console.log(update);
   };
 
   return (
@@ -40,7 +42,9 @@ export default function DocModal({ name, message, show, hide, id }) {
                 <h3>{name}</h3>
                 <em>{id.getTimestamp().toLocaleString()}</em>
               </div>
-              <button onClick={hide}>Close</button>
+              <button onClick={hide}>
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
 
             <form className="modal_form">
@@ -55,8 +59,18 @@ export default function DocModal({ name, message, show, hide, id }) {
             </form>
 
             <div className="modal_info-bottom">
-              <button onClick={updateDoc} id="delBtn">
-                Update<i class="fa-solid fa-pen-to-square"></i>
+              <button
+                onClick={updateDoc}
+                disabled={updatedmessage === "" ? true : false}
+                id="updateBtn"
+              >
+                {updatedmessage !== "" ? (
+                  <>
+                    Update <i class="fa-solid fa-pen-to-square"></i>
+                  </>
+                ) : (
+                  "No change"
+                )}
               </button>
               <button onClick={deleteDoc} id="delBtn">
                 Delete<i class="fa-solid fa-trash-can"></i>

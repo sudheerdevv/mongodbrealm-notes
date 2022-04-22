@@ -103,19 +103,34 @@
   align-items: center;
 }
 
+#updateBtn {
+  border: none;
+  outline: none;
+  padding: 5px 30px;
+  font-family: "Poppins";
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#updateBtn:disabled {
+  pointer-events: none;
+}
+
 #delBtn {
   border: none;
   outline: none;
   padding: 5px 30px;
   font-family: "Poppins";
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: red;
 }
 
-#delBtn i {
+#delBtn i,
+#updateBtn i {
   margin-left: 0.4rem;
 }
 
 #delBtn:hover {
-  color: red;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  background: gainsboro;
 }
